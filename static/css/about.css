@@ -1,0 +1,248 @@
+html {
+  scroll-behavior: smooth;
+}
+/* primary navigation
+--------------------------------------------------------------------- */
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+  font: 12px 'opensans-bold', sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.opaque { background-color: #333; }
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn { display: none; }
+
+ul#nav {
+  min-height: 48px;
+  width: auto;
+
+  /* center align the menu */
+  text-align: center;
+}
+ul#nav li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+
+/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
+ text-decoration: none;
+  text-align: left;
+  color: #fff;
+
+ -webkit-transition: color .2s ease-in-out;
+ -moz-transition: color .2s ease-in-out;
+ -o-transition: color .2s ease-in-out;
+ -ms-transition: color .2s ease-in-out;
+ transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active { background-color: transparent !important; }
+ul#nav li.current a { color: #F06000; }
+
+/* primary navigation
+--------------------------------------------------------------------- */
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+  font: 12px 'opensans-bold', sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.opaque { background-color: #333; }
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn { display: none; }
+
+ul#nav {
+  min-height: 48px;
+  width: auto;
+
+  /* center align the menu */
+  text-align: center;
+}
+ul#nav li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+
+/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
+ text-decoration: none;
+  text-align: left;
+  color: #fff;
+
+ -webkit-transition: color .2s ease-in-out;
+ -moz-transition: color .2s ease-in-out;
+ -o-transition: color .2s ease-in-out;
+ -ms-transition: color .2s ease-in-out;
+ transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active { background-color: transparent !important; }
+ul#nav li.current a { color: #F06000; }
+
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+#about.container {
+  max-width: 960px;
+}
+
+.intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.intro-image {
+  flex: 1 1 200px;
+}
+
+.intro-image img {
+  width: 100%;
+  background-color: var(--grey-color);
+}
+
+.intro {
+  margin-left: 3rem;
+  flex: 1 1 60%;
+}
+
+.intro p {
+  max-width: 40ch;
+}
+
+.intro .large-text {
+  margin-top: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--shade-500);
+}
+
+.intro .bold-text {
+  font-size: 1.5rem;
+  color: var(--grey-text);
+}
+
+.main-text p {
+  font-size: 1.25rem;
+}
+
+summary .subsection-title {
+  display: inline;
+  cursor: pointer;
+}
+
+details {
+  margin: 1rem 0;
+}
+
+details .main-text {
+  margin: 1rem 1rem 3rem;
+}
+
+details .text {
+  padding: 2rem 0;
+  border-bottom: 1px dashed var(--shade-300);
+}
+
+details .list .text {
+  padding-bottom: 1rem;
+}
+
+details .text:first-of-type {
+  padding-top: 0;
+}
+
+.text-header {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+#experience .text-header a,
+#volunteering .text-header a {
+  color: var(--shade-300);
+  text-decoration: none;
+}
+
+.text p.text-subtitle {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.text li {
+  max-width: 65ch;
+  font-size: 1.15rem;
+  color: var(--grey-text);
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 0;
+}
+
+.tags li {
+  font-size: 1rem;
+  margin: 0.25rem 2rem 0.25rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+@media screen and (max-width: 720px) {
+  .intro-container {
+    flex-direction: column-reverse;
+  }
+
+  .intro {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+}
