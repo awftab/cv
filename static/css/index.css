@@ -1,3 +1,8 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   overflow: hidden;
 }
@@ -179,15 +184,9 @@ section:last-of-type .container {
   object-fit: cover;
   object-position: top;
   opacity: 0.8;
-  filter: brightness(45%) grayscale(1);
+  filter: brightness(75%) grayscale(0);
   transition: filter 1000ms;
   cursor: pointer;
-}
-
-.project:hover .project-image img,
-.project.active .project-image img,
-.project:focus-within .project-image img {
-  filter: brightness(100%) grayscale(0);
 }
 
 .project-content {

@@ -26,6 +26,7 @@
       filter: brightness(100%) grayscale(0);
     }
  }
+ 
 /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
