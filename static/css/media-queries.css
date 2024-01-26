@@ -6,7 +6,26 @@
 
 /* ================================================================== */
 
-
+@media screen and (min-width: 768px) {
+   /* Your styles for non-mobile devices go here */
+   .project-image img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: top;
+      opacity: 0.8;
+      filter: brightness(45%) grayscale(1);
+      transition: filter 1000ms;
+      cursor: pointer;
+    }
+    
+    .project:hover .project-image img,
+    .project:active .project-image img,
+    .project:focus-within .project-image img {
+      filter: brightness(100%) grayscale(0);
+    }
+ }
 /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
